@@ -30,7 +30,7 @@ const MobileSidebar = () => {
         ref={(Sidebar) => (sidebar = Sidebar)}
         created={() => sidebar.hide()}
         closeOnDocumentClick={true}
-        showBackDrop={true}
+        showBackdrop={true}
         type="over"
       >
         <NavItems handleClick={toggleSidebar} />
