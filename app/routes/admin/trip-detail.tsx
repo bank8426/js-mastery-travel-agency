@@ -96,7 +96,7 @@ const TripDetail = ({ loaderData }: Route.ComponentProps) => {
                 "w-full rounded-xl object-cover",
                 i === 0
                   ? "md:col-span-2 md:row-span-2 h-[330px]"
-                  : "md:row-span-1 h-[150px"
+                  : "md:row-span-1 h-[150px]"
               )}
             />
           ))}
