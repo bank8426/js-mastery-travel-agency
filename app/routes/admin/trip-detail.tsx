@@ -30,7 +30,6 @@ export const loader = async ({ params }: LoaderFunctionArgs) => {
 };
 
 const TripDetail = ({ loaderData }: Route.ComponentProps) => {
-  console.log(loaderData);
   const imageUrls = loaderData?.trip?.imageUrls || [];
   const tripData = parseTripData(loaderData?.trip?.tripDetail);
 
@@ -49,8 +48,6 @@ const TripDetail = ({ loaderData }: Route.ComponentProps) => {
     groupType,
   } = tripData || {};
   const allTrips = loaderData?.allTrips as Trip[];
-  console.log(allTrips);
-
   const pillItems = [
     { text: travelStyle, bg: "!bg-pink-50 !text-pink-500" },
     { text: groupType, bg: "!bg-primary-50 !text-primary-500" },
