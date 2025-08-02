@@ -14,8 +14,6 @@ export async function clientLoader() {
     const existingUser = await getExistingUser(user.$id);
 
     if (existingUser?.status === "user") {
-      console.log("normal user access admin dashboard, redirect to home");
-
       return redirect("/");
     }
 
